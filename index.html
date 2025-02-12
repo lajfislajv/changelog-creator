@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog Creator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="changelog-header">
+            <h1>Changelog Creator</h1>
+        </header>
+
+        <main class="changelog-main">
+            <section class="changelog-content">
+                <div class="changelog-section" id="new-section">
+                    <h2>NEW</h2>
+                    <input type="text" id="input-el-new" placeholder="Add new item">
+                    <button id="add-new-btn">Add</button>
+                    <ul id="ul-el-new"></ul>
+                </div>
+                <div class="changelog-section" id="improved-section">
+                    <h2>IMPROVED</h2>
+                    <input type="text" id="input-el-improved" placeholder="Add new item">
+                    <button id="add-improved-btn">Add</button>
+                    <ul id="ul-el-improved"></ul>
+                </div>
+                <div class="changelog-section" id="fixed-section">
+                    <h2>FIXED</h2>
+                    <input type="text" id="input-el-fixed" placeholder="Add new item">
+                    <button id="add-fixed-btn">Add</button>
+                    <ul id="ul-el-fixed"></ul>
+                </div>
+                <button class="generate-changelog-btn" type="button" disabled>Generate Changelog</button>
+            </section>
+
+            <section class="generated-changelog">
+                <div class="loading-panel">
+                    <img src="images/loader.svg" alt="Loading">
+                    <div id="api-message">Preparing Changelog...</div>
+                </div>
+                <div class="output-panel">
+                    <p id="output-content"></p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
